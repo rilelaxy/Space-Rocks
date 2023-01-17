@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_hive",
   "spriteId": {
-    "name": "spr_hive_big",
-    "path": "sprites/spr_hive_big/spr_hive_big.yy",
+    "name": "spr_hive_small",
+    "path": "sprites/spr_hive_small/spr_hive_small.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,7 +24,10 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
