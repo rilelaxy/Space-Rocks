@@ -1,7 +1,8 @@
 switch(room){
 	case rm_game:
-		draw_text(20, 20, "SCORE: "+string(score));
+		draw_text(20, 20, "HIVES SAVED: "+string(score));
 		draw_text(20, 40, "LIVES: "+string(lives));
+		draw_text(20, 60, "HONEY LEFT: "+string(global.honey));
 		break;
 
 	case rm_start:
@@ -16,7 +17,11 @@ switch(room){
 			@"Help 1,000 hives to win!
 Up: Move
 Left/Right: Change direction
-Space: Shoot
+Space: Shoot HONEY
+
+
+
+
 Press ENTER to START"
 		);
 		draw_set_halign(fa_left)
@@ -49,7 +54,8 @@ Press ENTER to START"
 		);
 		draw_text(
 			room_width/2, 300,
-			"Press ENTER to RESTART"
+			@"Press ENTER to CONTINUE 
+WHERE YOU LEFT OFF"
 		);
 		draw_set_halign(fa_left)
 		break;

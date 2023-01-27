@@ -1,5 +1,3 @@
-score = 0;
+score = score;
 lives = 1;
-
-
-
+global.honey = 50;

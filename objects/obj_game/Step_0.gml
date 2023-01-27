@@ -20,3 +20,9 @@ if(room == rm_game){
 		room_goto(rm_gameover);
 	}
 }
+
+if(room == rm_game){
+	if(global.honey >= 0){
+		
+	}
+}
