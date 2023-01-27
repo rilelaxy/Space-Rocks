@@ -12,7 +12,7 @@ if(keyboard_check_pressed(vk_enter)){
 }
 
 if(room == rm_game){
-	if(score >= 1000){
+	if(score >= 10){
 		room_goto(rm_win);
 	}
 
@@ -21,8 +21,16 @@ if(room == rm_game){
 	}
 }
 
+
 if(room == rm_game){
-	if(global.honey >= 0){
-		
+	if(global.honey = 0){
+		room_goto(rm_reload)
+	}
+}
+
+if(room == rm_reload){
+	if(global.honey = 100){
+		room_goto(rm_game)
+		global.honey = 50
 	}
 }
