@@ -1,6 +1,7 @@
 if(keyboard_check_pressed(vk_enter)){
 	switch(room){
 		case rm_start:
+		audio_play_sound(snd_beeshoot, 1, false);
 		room_goto(rm_game);
 		break;
 		
@@ -14,10 +15,12 @@ if(keyboard_check_pressed(vk_enter)){
 if(room == rm_game){
 	if(score >= 50){
 		room_goto(rm_win);
+		audio_play_sound(snd_win, 1, false);
 	}
 
 	if(lives <= 0){
 		room_goto(rm_gameover);
+		audio_play_sound(snd_lose, 1, false);
 	}
 }
 

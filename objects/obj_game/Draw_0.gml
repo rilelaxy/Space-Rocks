@@ -84,4 +84,3 @@ Press ENTER to START"
 		
 }
 
-draw_set_font(fnt_text);
