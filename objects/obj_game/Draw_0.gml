@@ -37,7 +37,7 @@ TO RELOAD!"
 		);
 		draw_text(
 			room_width/2, 150,
-			@"Save 10 hives to win!
+			@"Save 50 hives to win!
 Up: Move
 Left/Right: Change direction
 Space: Shoot HONEY
